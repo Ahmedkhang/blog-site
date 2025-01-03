@@ -6,7 +6,13 @@ export default function Blogs(){
     return(
         <>
         <Hero />
-        <Card />
+        
+        <Card post={{
+                slug: '',
+                title: '',
+                summary: '',
+                image: undefined
+            }} />
         </>
     )
 }
