@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { urlForImage } from '@/sanity/lib/image'
 
-const Card = ({ post }: { post: Post }) => {
+const Blog = ({ post }: { post: Post }) => {
     return (
         <section className="flex flex-col justify-between h-[480px]  rounded bg-zinc-100  shadow-md shadow-gray-300 dark:shadow-black/80 group hover:scale-105 transition-transform ease-out duration-700">
         {/* Image Section*/}
@@ -37,7 +37,7 @@ const Card = ({ post }: { post: Post }) => {
     );
 }
 
-export default Card;
+export default Blog'
 
 
 // <div className='w-full gap-20 flex-cols-1 lg:flex h-[700px] pt-10 md:mx-10 rounded-lg '>
