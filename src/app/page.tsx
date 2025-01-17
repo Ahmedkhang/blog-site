@@ -17,9 +17,9 @@ export default  async function Home() {
 
   return (
 
-    <div className='h-[1000px] bg-white w-full'>
+    <div className='h-full bg-white w-full'>
       <h1 className='w-full text-center  pt-5 text-2xl md:text-3xl lg:text-4xl font-bold text-blue-400'>Most Recent Blogs</h1>
-      <div className=''>
+      <div className='md:flex  pt-10'>
      {posts.map((posts:Post) => (
       <Card key={posts.slug} post={posts} />
      ))}
