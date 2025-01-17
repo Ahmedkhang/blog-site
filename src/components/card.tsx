@@ -5,35 +5,21 @@ import { urlForImage } from '@/sanity/lib/image'
 
 const Card = ({ post }: { post: Post }) => {
     return (
-        <section className="flex flex-col justify-between h-[480px]  rounded bg-zinc-100  shadow-md shadow-gray-300 dark:shadow-black/80 group hover:scale-105 transition-transform ease-out duration-700">
-        {/* Image Section*/}
-        <div className="relative max-h-76 flex-1">
-          <Image
-            src={urlForImage(post.image).url()}
-            alt="AI for everyone"
-            fill
-            className="object-cover rounded-t"
-          />
-        </div>
-  
-        {/* Title and Summary */}
-        <div className="flex flex-col justify-between gapx-y-4  p-4">
-          <h2 className="text-lg font-semibold line-clamp-2 text-dark dark:text-light leading-tight mb-2">
-            {post.title}
-          </h2>
-          <p className="text-dark/70 dark:text-light/70 line-clamp-3">
-            {post.summary}
-          </p>
-  
-          {/* Read More dynamic Link */}
-          <Link
-            href={`/blog/${post.slug}`}
-            className="block px-4 py-1 text-center bg-accentDarkSecondary  rounded text-dark font-semibold mt-4"
-          >
-            Read More
-          </Link>
-        </div>
-      </section>
+<>
+     <div className='w-full px-8 py-3 h-auto md:flex justify-around'>
+
+
+ <div className='w-[300px] h-auto py-3 bg-zinc-100 flex-col shadow-lg trans'>
+    <Image src={urlForImage(post.image).url()} alt='' width={300} height={150}/>
+    <h1 className='text-xl md:text-2xl font-bold p-3'>{post.title}</h1>
+    <p className='font-bold p-3'>{post.summary}</p>
+<Link href={`/blog/${post.slug}`}><button className='text-white bg-blue-400 mx-[80px] rounded-lg transform-transition hover:duration-800 hover:ease-in-out px-5 py-2 hover:text-black hover:bg-white font-bold'>Read More</button></Link>
+ </div>
+
+
+            </div> 
+     
+</>
     );
 }
 
