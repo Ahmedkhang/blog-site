@@ -3,7 +3,7 @@ import Image from 'next/image';
 const Hero = () => {
     return(
             <>
-                <div className='w-full text-center justify-center '>
+                <div className='w-full text-center bg-gray-800 justify-center '>
                     <Image src='/download4.jpg' alt='' width={900} height={500} className='w-full h-[700px] opacity-[0.7]' />
                    <div className='absolute flex-cols-1 h-auto '> 
                     <h1 className='text-2xl md:text-3xl lg:left-[650px]  bottom-[500px] left-[100px] text-center  flex items-center lg:text-6xl absolute pt-2 font-bold hover:text-blue-400 duration:0.3s ease-in-out text-white'>Tech<span className='text-blue-400'>Blog</span></h1>
