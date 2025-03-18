@@ -19,7 +19,7 @@ export default  async function Home() {
 
     <div className='h-full bg-white w-full'>
       <h1 className='w-full text-center  pt-5 text-2xl md:text-3xl lg:text-4xl font-bold text-blue-400'>Most Recent Blogs</h1>
-      <div className='md:flex  pt-10'>
+      <div className='grid grid-cols- md:grid-cols-2 lg:grid-cols-3  pt-10'>
      {posts.map((posts:Post) => (
       <Card key={posts.slug} post={posts} />
      ))}
