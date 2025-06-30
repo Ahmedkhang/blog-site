@@ -11,8 +11,8 @@ const Card = ({ post }: { post: Post }) => {
 
  <div className='w-[300px] h-auto py-3 bg-zinc-100 flex-col shadow-lg trans'>
     <Image src={urlForImage(post.image).url()} alt='' width={300} height={150}/>
-    <h1 className='text-xl md:text-2xl font-bold p-3'>{post.title}</h1>
-    <p className='font-bold p-3'>{post.summary}</p>
+    <h1 className='text-black text-xl md:text-2xl font-bold p-3'>{post.title}</h1>
+    <p className='text-black font-bold p-3'>{post.summary}</p>
 <Link href={`/blog/${post.slug}`}><button className='text-white bg-blue-400 mx-[80px] rounded-lg transform-transition hover:duration-800 hover:ease-in-out px-5 py-2 hover:text-black hover:bg-white font-bold'>Read More</button></Link>
  </div>
 
